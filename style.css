@@ -1,5 +1,5 @@
-h2{
-    color: blue;
+h1{
+    color: #fff;
 }
 .hero--banner{
     background-image: url(./assets/images/vmaker-home-banner.png);
@@ -45,8 +45,9 @@ input[type="button"]{
     font-size: 18px;
 }
 input[type="button"]:hover{
-    background-color: rgb(136, 136, 127);
-    color: rgb(101, 215, 101);
+    background-color: #333;
+    color: #fff;
+    margin-top: -2px;
 }
 .calc {
     display: flex;
