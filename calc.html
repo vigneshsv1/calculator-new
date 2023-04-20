@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2></h2>
+    <div class="container">
+        <div class="hero--banner">
+            <div class="input">
+                <input type="text">
+            </div>
+            <div class="calc-flex">
+                
+            <button class="calc">1</button>
+            <button class="calc">2</button>
+            <button class="calc">3</button>
+            <button class="calc">+</button>
+
+            <button class="calc">4</button>
+            <button class="calc">5</button>
+            <button class="calc">6</button>
+            <button class="calc">-</button>
+
+            <button class="calc">7</button>
+            <button class="calc">8</button>
+            <button class="calc">9</button>
+            <button class="calc">*</button>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class=”calculator”>
+        <div class=”calculator__display”>0</div>
+        <div class=”calculator__keys”> … </div>
+      </div>
+
+      <div class="calculator__keys">
+        <button class="key--operator" data-action="add">+</button>
+        <button class="key--operator" data-action="subtract">-</button>
+        <button class="key--operator" data-action="multiply">&times;</button>
+        <button class="key--operator" data-action="divide">÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button data-action="decimal">.</button>
+        <button data-action="clear">AC</button>
+        <button class="key--equal" data-action="calculate">=</button>
+      </div>
+      <script>
+        const calculator = document.querySelector('.calculator');
+        const keys = document.querySelector('.calculator__keys');
+        var display = document.querySelector('.calculator__display')
+
+        keys.addEventListener('click', function(e){
+            if(e.target.matches('button')){
+                const key = e.target;
+                const action = key.dataset.action;
+                const keyContent = key.textContent;
+                const displayedNum = key.textContent;
+                console.log(keyContent);
+                if (!action) {
+  if (displayedNum === '0') {
+    display.textContent = keyContent
+  } else {
+    // display.textContent = displayedNum + keyContent
+  }
+
+
+    if (action === 'decimal') {
+    display.textContent = displayedNum + '.'
+    }
+    if (
+  action === 'add' ||
+  action === 'subtract' ||
+  action === 'multiply' ||
+  action === 'divide'
+) {
+  key.classList.add('is-depressed')
+}
+}
+
+Array.from(key.parentNode.children)
+      .forEach(k => k.classList.remove('is-depressed'))
+  
+            if (
+                action === 'add' ||
+                action === 'subtract' ||
+                action === 'multiply' ||
+                action === 'divide'
+                ) {
+                console.log('operator key!')
+            }
+            if (action === 'decimal') {
+                console.log('decimal key!')
+            }
+
+            if (action === 'clear') {
+                console.log('clear key!')
+            }
+
+            if (action === 'calculate') {
+                 console.log('equal key!')
+            }
+            }
+
+        })
+        </script>
+</body>
