@@ -1,19 +1,6 @@
 h1{
     color: #fff;
 }
-.hero--banner{
-    background-image: url(./assets/images/vmaker-home-banner.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    gap: 15px;
-}
-
 input[type="text"] {
     padding: 18px 15px 18px 200px;
     border: 1px solid beige;
