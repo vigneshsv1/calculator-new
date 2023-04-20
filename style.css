@@ -1,3 +1,53 @@
 h2{
     color: blue;
 }
+.hero--banner{
+    background-image: url(./assets/images/vmaker-home-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 15px;
+}
+.calc-flex {
+    display: grid;
+    grid-template-columns: repeat(100px, 1fr);
+    grid-template-columns: repeat(4, 100px);
+    gap: 15px;
+}
+button.calc{
+    padding: 15px 25px;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    border: none;
+}
+input[type="text"]{
+    display: inline;
+    width: 100%;
+    display: flex;
+    padding: 15px 100px 15px 0;
+    width: 100%;
+    outline: none;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+}
+.calculator__keys button{
+    padding: 15px 25px;
+    background-color: beige;
+    color: #000;
+    outline: none;
+    border: none;
+}
