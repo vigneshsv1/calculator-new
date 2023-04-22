@@ -1,3 +1,57 @@
-h2{
-    color: blue;
+h1{
+    color: #fff;
+}
+input[type="text"] {
+    padding: 18px 15px 18px 200px;
+    border: 1px solid beige;
+    border-radius: 5px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./assets/images/vmaker-home-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+input[type="button"]{
+    padding: 15px 25px;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    border: 1px solid beige;
+    border-radius: 5px;
+    font-size: 18px;
+}
+input[type="button"]:hover{
+    background-color: #333;
+    color: #fff;
+    margin-top: -2px;
+}
+.calc {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+@media only screen and (max-width:767px) {
+    .keys {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        gap: 10px;
+    }
+    input[type="text"] {
+        padding: 18px 55px;
+    }
 }
